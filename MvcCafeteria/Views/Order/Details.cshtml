@@ -1,0 +1,69 @@
+@model OrderDetailsViewModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<h4>Order number @Html.DisplayFor(model => model.Order.Id)</h4>
+<h5>Order placed on @Html.DisplayFor(model => model.Order.TimeStamp)</h5>
+
+<hr />
+
+<div>
+    <h4>Order Items</h4>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>
+                    Product
+                </th>
+                <th>
+                    Category
+                </th>
+                <th>
+                    Quantity
+                </th>
+                <th>
+                    Price
+                </th>
+                <th>
+                    Subtotal
+                </th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+    @foreach (var item in Model.Products.Keys!) {
+        var quantity = Model.Products[item];
+        var subtotal = item.Price * quantity;
+
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Category)
+                </td>
+                <td>
+                    @quantity.ToString()
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Price)
+                </td>
+                <td>
+                    @subtotal.ToString()
+                </td>
+            </tr>
+    }
+        </tbody>
+    </table>
+
+    <h5>Total Price:</h5>
+    <p>@Html.DisplayFor(model => model.Order.TotalPrice)</p>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model?.Order.Id">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
