@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\l0rdv\\Desktop\\Unit_Tests\\MvcCafeteria\\MvcCafeteria.csproj": {}
+    "C:\\Users\\l0rdv\\Desktop\\MVC_Cafeteria\\MvcCafeteria\\MvcCafeteria.csproj": {}
   },
   "projects": {
-    "C:\\Users\\l0rdv\\Desktop\\Unit_Tests\\MvcCafeteria\\MvcCafeteria.csproj": {
+    "C:\\Users\\l0rdv\\Desktop\\MVC_Cafeteria\\MvcCafeteria\\MvcCafeteria.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\l0rdv\\Desktop\\Unit_Tests\\MvcCafeteria\\MvcCafeteria.csproj",
+        "projectUniqueName": "C:\\Users\\l0rdv\\Desktop\\MVC_Cafeteria\\MvcCafeteria\\MvcCafeteria.csproj",
         "projectName": "MvcCafeteria",
-        "projectPath": "C:\\Users\\l0rdv\\Desktop\\Unit_Tests\\MvcCafeteria\\MvcCafeteria.csproj",
+        "projectPath": "C:\\Users\\l0rdv\\Desktop\\MVC_Cafeteria\\MvcCafeteria\\MvcCafeteria.csproj",
         "packagesPath": "C:\\Users\\l0rdv\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\l0rdv\\Desktop\\Unit_Tests\\MvcCafeteria\\obj\\",
+        "outputPath": "C:\\Users\\l0rdv\\Desktop\\MVC_Cafeteria\\MvcCafeteria\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\l0rdv\\AppData\\Roaming\\NuGet\\NuGet.Config"
